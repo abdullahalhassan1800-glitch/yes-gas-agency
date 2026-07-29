@@ -1,0 +1,190 @@
+export const siteContent = {
+  phone: '+91 1234567890',
+  phoneRaw: '911234567890',
+  email: 'support@hassan.com',
+  address: 'Delhi',
+  addressFull: 'Delhi',
+  workingHours: 'Mon – Sun, 8:00 AM – 9:00 PM',
+  serviceCity: 'Delhi',
+
+  nav: [
+    { label: 'Home', path: '/' },
+    { label: 'Services', path: '/services' },
+    { label: 'About', path: '/about' },
+    { label: 'Pricing', path: '/pricing' },
+    { label: 'Contact', path: '/contact' },
+  ],
+
+  stats: [
+    { value: '2–4 hrs', label: 'Same Day Service', sub: 'Book before 5 PM' },
+    { value: '5,000+', label: 'Happy Customers', sub: `Across ${'Delhi'}` },
+    { value: '4.9★', label: 'Average Rating', sub: 'All platforms' },
+  ],
+
+  aboutStats: [
+    { value: '5,000+', label: 'Homes Serviced' },
+    { value: '10+', label: 'Years in Business' },
+    { value: '4.9★', label: 'Avg Rating' },
+    { value: '30-Day', label: 'Warranty' },
+  ],
+
+  whyChooseUs: [
+    { title: 'Safety First', desc: 'Every job includes a full safety inspection before we leave.' },
+    { title: '2–4 Hour Arrival', desc: 'We reach your doorstep within hours, not days.' },
+    { title: '10+ Years Experience', desc: 'Trusted by thousands since 2014.' },
+    { title: '5,000+ Happy Homes', desc: 'Our track record speaks for itself.' },
+    { title: 'ID-Verified Technicians', desc: 'Every technician is background-checked and certified.' },
+    { title: '30-Day Warranty', desc: 'Free service if the same issue returns within 30 days.' },
+  ],
+
+  services: [
+    {
+      title: 'Gas Stove Repair',
+      tagline: 'All brands, all problems — fixed same day.',
+      range: '₹299 – ₹999',
+      time: '2–4 hrs',
+      image: '/images/service-stove-repair.png',
+      badge: 'Most Popular',
+      badgeColor: 'bg-primary',
+      features: ['Prestige, Pigeon, Glen, Sunflame & more', 'Burner replacement', 'Valve repair', 'Ignition fix', '30-day warranty'],
+    },
+    {
+      title: 'Deep Burner Cleaning',
+      tagline: 'Blue flame restored. Cooking efficiency back.',
+      range: '₹199 – ₹499',
+      time: '1–2 hrs',
+      image: '/images/service-burner-cleaning.png',
+      badge: 'Best Value',
+      badgeColor: 'bg-sapphire',
+      features: ['Complete dismantling', 'Chemical degreasing', 'Jet & nozzle unclogging', 'Blue flame optimization', 'Gas efficiency check'],
+    },
+    {
+      title: 'Pipeline Installation',
+      tagline: 'Safe, sealed, and professionally installed.',
+      range: '₹599 – ₹1,999',
+      time: '2–6 hrs',
+      image: '/images/service-pipeline.png',
+      badge: null,
+      badgeColor: null,
+      features: ['ISI-certified pipes', 'Domestic & commercial', 'Pressure leak testing', 'Safety compliance', 'Post-install inspection'],
+    },
+    {
+      title: 'Emergency Gas Leak',
+      tagline: '24/7 emergency response — we arrive in 60 min.',
+      range: '₹499 onwards',
+      time: 'Within 60 Min',
+      image: '/images/service-gas-leak.png',
+      badge: '24/7 Emergency',
+      badgeColor: 'bg-primary',
+      features: ['24/7 including holidays', 'Electronic leak detector', 'Immediate sealing', 'Full safety checklist', 'Written clearance certificate'],
+    },
+    {
+      title: 'Auto Ignition Repair',
+      tagline: 'Spark back in seconds — no more manual lighting.',
+      range: '₹299 – ₹699',
+      time: '1–3 hrs',
+      image: '/images/service-ignition.png',
+      badge: null,
+      badgeColor: null,
+      features: ['Spark module replacement', 'Electrode cleaning', 'Battery & wiring check', 'All brand compatibility', 'On-site testing'],
+    },
+    {
+      title: 'Gas Regulator Service',
+      tagline: 'Correct pressure. Safe flow. Every time.',
+      range: '₹199 – ₹499',
+      time: '30–60 Min',
+      image: '/images/service-regulator.png',
+      badge: null,
+      badgeColor: null,
+      features: ['Pressure calibration', 'Regulator replacement', 'Hose pipe inspection', 'Leak detection', 'Safety compliance'],
+    },
+  ],
+
+  homeServices: [
+    { title: 'Gas Stove Repair', desc: 'All Brands • 30 Day Warranty', image: '/images/service-stove-repair.png' },
+    { title: 'Deep Burner Cleaning', desc: 'Blue Flame • Carbon Removal', image: '/images/service-burner-cleaning.png' },
+    { title: 'Pipeline Installation', desc: 'Safety Tested • New Fittings', image: '/images/service-pipeline.png' },
+    { title: 'Emergency Gas Leak', desc: '24/7 Response • 60 Min Arrival', image: '/images/service-gas-leak.png' },
+  ],
+
+  howItWorks: [
+    { step: '01', title: 'Call or WhatsApp Us', desc: 'Reach us in under 2 minutes. Tell us your issue and location.', extra: 'Available 8 AM – 8 PM, 7 days a week.' },
+    { step: '02', title: 'Technician at Your Door', desc: 'A certified, ID-verified technician reaches you in 2–4 hours.', extra: 'Get SMS with technician ETA.' },
+    { step: '03', title: 'Fixed, Safe & Guaranteed', desc: 'Problem resolved correctly the first time with safety testing.', extra: 'Free replacement within 30 days.' },
+  ],
+
+  testimonials: [
+    { name: 'Ravi Kumar', location: 'Delhi', text: 'The technician arrived within an hour and fixed my stove perfectly. Very professional service!', rating: 5 },
+    { name: 'Sneha Reddy', location: 'Delhi', text: 'Had a scary gas leak. They came immediately and sorted it out. Highly recommend!', rating: 5 },
+    { name: 'Abdul Rahman', location: 'Delhi', text: 'My stove auto-ignition was broken for weeks. They fixed it in 30 minutes. Great work!', rating: 5 },
+  ],
+
+  serviceAreas: {
+    highDemand: ['Delhi NCR', 'South Delhi', 'East Delhi', 'West Delhi', 'North Delhi', 'Central Delhi', 'Dwarka', 'Rohini'],
+    alsoCovered: ['Ghaziabad', 'Noida', 'Gurugram', 'Faridabad', 'Laxmi Nagar', 'Karol Bagh', 'Connaught Place', 'Hauz Khas', 'Saket', 'Lajpat Nagar', 'Pitampura', 'Janakpuri', 'Paschim Vihar', 'Patel Nagar', 'Moti Nagar', 'Rajouri Garden', 'Shahdara', 'Kashmiri Gate', 'Sarojini Nagar', 'Green Park', 'Greater Kailash', 'Vasant Kunj'],
+  },
+
+  faqs: [
+    {
+      q: 'How fast can you reach my location in Delhi?',
+      a: 'We typically arrive within 2–4 hours of your call. For emergencies, we can be there in under 60 minutes.',
+    },
+    {
+      q: 'Do you repair all brands of gas stoves?',
+      a: 'Yes! We repair all brands including Prestige, Glen, Elica, Faber, Butterfly, Pigeon, Sunflame, and imported models.',
+    },
+    {
+      q: 'What if the problem returns after repair?',
+      a: 'All our repairs come with a 30-day warranty. If the same issue returns, we will fix it free of charge.',
+    },
+    {
+      q: 'Are there any visiting charges?',
+      a: 'We charge a ₹199 inspection fee, which is fully waived if you proceed with the repair.',
+    },
+    {
+      q: 'Is it safe? How do you check for gas leaks?',
+      a: 'Safety is our priority. We use digital manometers and soap solution testing on every job to ensure zero leaks.',
+    },
+  ],
+
+  pricingPlans: [
+    {
+      name: 'Basic Inspection',
+      price: '₹199',
+      desc: 'Inspection fee waived on repair',
+      popular: false,
+      features: ['Expert inspection', 'Issue diagnosis', 'Cost estimate', 'No obligation'],
+    },
+    {
+      name: 'Standard Service',
+      price: '₹399',
+      desc: 'Starting price, full deep clean + tune',
+      popular: true,
+      features: ['Deep burner cleaning', 'Complete tune-up', 'Ignition check', '30-day warranty'],
+    },
+    {
+      name: 'Pipeline Install',
+      price: '₹999',
+      desc: 'Starting price, ISI-certified',
+      popular: false,
+      features: ['ISI-certified pipes', 'Professional installation', 'Pressure leak test', 'Safety certificate'],
+    },
+  ],
+
+  priceTable: [
+    { service: 'Gas Stove Repair (Single Burner)', range: '₹299 – ₹599' },
+    { service: 'Gas Stove Repair (2/3 Burner)', range: '₹399 – ₹799' },
+    { service: 'Deep Burner Cleaning', range: '₹199 – ₹499' },
+    { service: 'Auto Ignition Repair', range: '₹299 – ₹699' },
+    { service: 'Gas Regulator Service', range: '₹199 – ₹499' },
+    { service: 'Emergency Gas Leak Fix', range: '₹499 onwards' },
+    { service: 'Pipeline Installation', range: '₹999 onwards' },
+    { service: 'Hose Pipe Replacement', range: '₹199 – ₹349' },
+  ],
+
+  pricingFaqs: [
+    { q: 'Is inspection fee waived if repair is done?', a: 'Yes, the ₹199 inspection fee is fully waived if you proceed with the repair.' },
+    { q: 'Are spare parts included in the price?', a: 'Spare parts are billed separately at MRP with no markup.' },
+    { q: 'Is there a call-out fee for emergency?', a: 'No hidden fees. Emergency service starts at ₹499.' },
+  ],
+}
