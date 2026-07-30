@@ -35,7 +35,7 @@ export default function About() {
               <span className="text-sm font-semibold text-primary uppercase tracking-wider">Who We Are</span>
               <h2 className="text-3xl font-bold text-gray-900 mt-2 mb-6">{siteContent.serviceCity}'s Most Trusted Gas Service Partner</h2>
               <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
-                <p>We are Yes Gas Agency, a premier gas stove repair and service provider based in {siteContent.serviceCity}, serving customers since 2014.</p>
+                <p>We are Manoj Gas Fix, a premier gas stove repair and service provider based in {siteContent.serviceCity}, serving customers since 2014.</p>
                 <p>Our team of certified and background-verified technicians specializes in safe, reliable, and affordable solutions for all gas stove needs.</p>
                 <p>We support all major brands and provide emergency service 24/7. Your safety is our top priority.</p>
               </div>
