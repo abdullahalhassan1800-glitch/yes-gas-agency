@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center font-bold text-lg">YG</div>
+              <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Yes Gas Agency" className="h-10 w-auto" />
               <div>
                 <div className="text-lg font-bold leading-tight">Yes Gas</div>
                 <div className="text-[10px] font-medium text-primary uppercase tracking-widest leading-tight">Agency</div>

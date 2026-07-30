@@ -11,7 +11,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-white font-bold text-lg">YG</div>
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Yes Gas Agency" className="h-10 w-auto" />
             <div>
               <div className="text-lg font-bold text-gray-900 leading-tight">Yes Gas</div>
               <div className="text-[10px] font-medium text-primary uppercase tracking-widest leading-tight">Agency</div>
