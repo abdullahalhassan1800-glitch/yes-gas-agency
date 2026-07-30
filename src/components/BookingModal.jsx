@@ -25,7 +25,7 @@ export default function BookingModal() {
         <div className="sticky top-0 bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between rounded-t-2xl">
           <div>
             <div className="flex items-center gap-2">
-              <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Manoj Gas Fix" className="h-8 w-auto" />
+              <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="Manoj Gas Fix" className="h-8 w-auto" />
               <span className="font-semibold text-gray-900">Manoj Gas Fix</span>
             </div>
             <p className="text-xs text-gray-500 mt-1">Book a Service</p>
