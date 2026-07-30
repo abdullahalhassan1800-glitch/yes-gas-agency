@@ -10,12 +10,8 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center">
             <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="Manoj Gas Fix" className="h-10 w-auto" />
-            <div>
-              <div className="text-lg font-bold text-gray-900 leading-tight">Manoj Gas</div>
-              <div className="text-[10px] font-medium text-primary uppercase tracking-widest leading-tight">Fix</div>
-            </div>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
