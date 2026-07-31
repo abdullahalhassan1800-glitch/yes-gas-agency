@@ -23,14 +23,12 @@ export default function App() {
       <div className="bg-gradient-to-r from-primary to-primary-dark text-white overflow-hidden">
         <button onClick={openBooking} className="block w-full overflow-hidden cursor-pointer" aria-label="Claim 25% off offer">
           <div className="flex whitespace-nowrap animate-marquee">
-            <span className="inline-flex items-center gap-2 px-6 py-2 text-xs sm:text-sm font-semibold">
-              <span className="animate-flame inline-block">🔥</span>
-              25% OFF on All Services • Visiting Charge ₹99 Only • Book Now →
-            </span>
-            <span className="inline-flex items-center gap-2 px-6 py-2 text-xs sm:text-sm font-semibold" aria-hidden="true">
-              <span className="animate-flame inline-block">🔥</span>
-              25% OFF on All Services • Visiting Charge ₹99 Only • Book Now →
-            </span>
+            {[...Array(4)].map((_, i) => (
+              <span key={i} className="inline-flex items-center gap-2 px-6 py-2 text-xs sm:text-sm font-semibold" aria-hidden={i > 0}>
+                <span className="animate-flame inline-block">🔥</span>
+                25% OFF on All Services • Visiting Charge ₹99 Only • Book Now →
+              </span>
+            ))}
           </div>
         </button>
       </div>
