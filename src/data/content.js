@@ -114,9 +114,12 @@ export const siteContent = {
   ],
 
   testimonials: [
-    { name: 'Ravi Kumar', location: 'Delhi', text: 'The technician arrived within an hour and fixed my stove perfectly. Very professional and clean work!', rating: 5 },
-    { name: 'Sneha Reddy', location: 'Delhi', text: 'Had a scary gas leak at home. They came immediately, checked everything, and sorted it out. Highly recommend!', rating: 5 },
-    { name: 'Abdul Rahman', location: 'Delhi', text: 'My auto-ignition was broken for weeks. They fixed it in 30 minutes at a fair price. Great work!', rating: 5 },
+    { name: 'Priya Sharma', location: 'Rohini, Delhi', text: 'My gas stove was leaking gas near the knob. They reached within 45 minutes and fixed it with a new valve. Fully tested before leaving. Highly recommended!', rating: 5 },
+    { name: 'Vikram Singh', location: 'Dwarka, Delhi', text: 'Deep burner cleaning done beautifully. My stove flame is perfectly blue now and cooking is faster. Very reasonable price too.', rating: 5 },
+    { name: 'Fatima Khan', location: 'Janakpuri, Delhi', text: 'Booked online, technician arrived same day. The auto-ignition was repaired in 20 minutes with a 30-day warranty. Great service!', rating: 5 },
+    { name: 'Rohit Malhotra', location: 'Laxmi Nagar, Delhi', text: 'Pipeline installation was quick, clean, and professional. They checked for leaks with proper equipment and even explained everything. Very happy!', rating: 5 },
+    { name: 'Anjali Verma', location: 'Karol Bagh, Delhi', text: 'Had an emergency gas leak at night. They came within the hour, found the issue, and fixed it on the spot. Peace of mind restored.', rating: 5 },
+    { name: 'Amit Desai', location: 'Saket, Delhi', text: 'Honest pricing, no hidden charges. Regulator replaced at MRP with no markup. The technician was polite and punctual. Great experience overall.', rating: 5 },
   ],
 
   serviceAreas: {
