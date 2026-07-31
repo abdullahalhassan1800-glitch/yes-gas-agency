@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { siteContent } from '../data/content'
+import { submitToSheet } from '../utils/submitToSheet'
 
 export default function Services() {
   const openBooking = () => {
@@ -7,6 +8,22 @@ export default function Services() {
     if (btn) btn.click()
   }
   const [form, setForm] = useState({ name: '', phone: '', message: '' })
+  const [submitting, setSubmitting] = useState(false)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setSubmitting(true)
+    await submitToSheet({
+      name: form.name,
+      phone: form.phone,
+      service: '',
+      area: '',
+      problem: form.message,
+      source: 'Services Page',
+    })
+    setSubmitting(false)
+    window.location.href = '/thank-you'
+  }
 
   return (
     <div>
@@ -71,7 +88,7 @@ export default function Services() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Quick Booking</h2>
-              <form onSubmit={(e) => { e.preventDefault(); window.location.href = '/thank-you' }} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
                   <input required value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none" placeholder="Your name" />
@@ -85,8 +102,8 @@ export default function Services() {
                   <textarea rows={3} value={form.message} onChange={(e) => setForm({...form, message: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none resize-none" placeholder="Tell us about your issue..." />
                 </div>
                 <div className="sm:col-span-2">
-                  <button type="submit" className="px-8 py-3 bg-gradient-to-r from-navy-800 to-deep-navy text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-navy-900/30 transition-shadow">
-                    Book Service
+                  <button type="submit" disabled={submitting} className="px-8 py-3 bg-gradient-to-r from-navy-800 to-deep-navy text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-navy-900/30 transition-shadow disabled:opacity-60">
+                    {submitting ? 'Submitting...' : 'Book Service'}
                   </button>
                 </div>
               </form>

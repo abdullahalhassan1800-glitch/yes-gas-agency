@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 import { siteContent } from '../data/content'
+import { submitToSheet } from '../utils/submitToSheet'
 
 export default function BookingModal() {
   const [open, setOpen] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
   const [form, setForm] = useState({ name: '', phone: '', service: '', area: '', problem: '' })
 
   useEffect(() => {
@@ -11,8 +13,11 @@ export default function BookingModal() {
     return () => clearTimeout(timer)
   }, [])
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    setSubmitting(true)
+    await submitToSheet({ ...form, source: 'Popup Form' })
+    setSubmitting(false)
     setSubmitted(true)
     setTimeout(() => { setOpen(false); setSubmitted(false); setForm({ name: '', phone: '', service: '', area: '', problem: '' }) }, 3000)
   }
@@ -80,8 +85,8 @@ export default function BookingModal() {
               </div>
 
               <div className="flex gap-2 pt-1">
-                <button type="submit" className="flex-1 px-3 py-2.5 bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg text-xs font-semibold hover:shadow-lg hover:shadow-primary/40 transition-shadow">
-                  Confirm Booking
+                <button type="submit" disabled={submitting} className="flex-1 px-3 py-2.5 bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg text-xs font-semibold hover:shadow-lg hover:shadow-primary/40 transition-shadow disabled:opacity-60">
+                  {submitting ? 'Submitting...' : 'Confirm Booking'}
                 </button>
                 <a href={`tel:+${siteContent.phoneRaw}`} className="flex-1 px-3 py-2.5 bg-gradient-to-r from-navy-800 to-deep-navy text-white rounded-lg text-xs font-semibold text-center hover:shadow-lg hover:shadow-navy-900/30 transition-shadow">
                   Call Now

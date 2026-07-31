@@ -1,13 +1,25 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { siteContent } from '../data/content'
+import { submitToSheet } from '../utils/submitToSheet'
 
 export default function Contact() {
   const navigate = useNavigate()
   const [form, setForm] = useState({ name: '', phone: '', area: '', service: '', time: '', problem: '' })
+  const [submitting, setSubmitting] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    setSubmitting(true)
+    await submitToSheet({
+      name: form.name,
+      phone: form.phone,
+      service: form.service,
+      area: form.area,
+      problem: form.problem,
+      source: 'Contact Page',
+    })
+    setSubmitting(false)
     navigate('/thank-you')
   }
 
@@ -95,8 +107,8 @@ export default function Contact() {
                   <textarea rows={3} value={form.problem} onChange={(e) => setForm({...form, problem: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none resize-none" placeholder="Briefly describe your issue..." />
                 </div>
                 <div className="sm:col-span-2 flex flex-col sm:flex-row gap-3">
-                  <button type="submit" className="px-8 py-3 bg-gradient-to-r from-navy-800 to-deep-navy text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-navy-900/30 transition-shadow">
-                    Submit Enquiry
+                  <button type="submit" disabled={submitting} className="px-8 py-3 bg-gradient-to-r from-navy-800 to-deep-navy text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-navy-900/30 transition-shadow disabled:opacity-60">
+                    {submitting ? 'Submitting...' : 'Submit Enquiry'}
                   </button>
                   <a href={`tel:+${siteContent.phoneRaw}`} className="px-8 py-3 bg-gray-100 text-gray-800 rounded-full text-sm font-semibold text-center hover:bg-gray-200 transition-colors">
                     Call {siteContent.phone}
