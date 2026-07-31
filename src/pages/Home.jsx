@@ -63,16 +63,20 @@ export default function Home() {
           <div className="text-center mb-12">
             <span className="text-sm font-semibold text-primary uppercase tracking-wider">Why Choose Us</span>
             <h2 className="text-3xl font-bold text-gray-900 mt-2">
-              Safety is Our <span className="bg-gradient-to-r from-primary to-gold bg-clip-text text-transparent">Religion</span> Today
+              Safety is Our <span className="bg-gradient-to-r from-primary to-gold bg-clip-text text-transparent">Top Priority</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="bg-gradient-to-br from-primary-50 to-primary-50 rounded-2xl p-8 flex items-center justify-center min-h-[300px] overflow-hidden">
+            <div className="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 flex flex-col items-center justify-center gap-4 min-h-[300px]">
               <img
-                src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YyvD338wWOcMBMEa/logo-YNqMBZqDgkFMPLD6.png"
-                alt="Safety Certified"
-                className="w-full h-full object-cover rounded-2xl"
+                src={`${import.meta.env.BASE_URL}logo.jpeg`}
+                alt="Manoj Gas Fix"
+                className="w-full max-w-[300px] object-contain"
               />
+              <div className="flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-sm border border-primary-50">
+                <span className="text-lg">🛡️</span>
+                <span className="text-xs font-semibold text-navy-800">Certified & ID-Verified Technicians</span>
+              </div>
             </div>
             <div className="space-y-4">
               {[

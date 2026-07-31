@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Junk files
+*.msi
+/logo.jpeg
+/LOGO_1.png
+/logo.png
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

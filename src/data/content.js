@@ -108,7 +108,7 @@ export const siteContent = {
   ],
 
   howItWorks: [
-    { step: '01', title: 'Call or WhatsApp Us', desc: 'Tell us your issue and location in under 2 minutes. It is that simple.', extra: 'Available 8 AM – 8 PM, 7 days a week.' },
+    { step: '01', title: 'Call or WhatsApp Us', desc: 'Tell us your issue and location in under 2 minutes. It is that simple.', extra: 'Available 8 AM – 9 PM, 7 days a week.' },
     { step: '02', title: 'Technician at Your Door', desc: 'A certified, ID-verified technician reaches you in 2–4 hours.', extra: 'Get SMS updates with the technician ETA.' },
     { step: '03', title: 'Fixed, Safe & Guaranteed', desc: 'Problem resolved correctly the first time, with full safety testing.', extra: 'Free re-service within 30 days.' },
   ],
