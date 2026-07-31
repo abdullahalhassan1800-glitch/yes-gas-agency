@@ -104,12 +104,9 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {siteContent.homeServices.map((s, i) => (
               <div key={i} className="group bg-gradient-to-br from-sapphire to-sapphire rounded-2xl overflow-hidden text-white hover:-translate-y-1 transition-all duration-300 shadow-lg">
-                <div className={s.image ? 'relative h-44 overflow-hidden' : 'p-6 pb-0'}>
+                <div className={s.image ? 'relative h-44 bg-white overflow-hidden' : 'p-6 pb-0'}>
                   {s.image ? (
-                    <>
-                      <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-sapphire/60 to-transparent" />
-                    </>
+                    <img src={s.image} alt={s.title} className="w-full h-full object-contain" />
                   ) : (
                     <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center text-2xl mb-4">
                       {['🔧', '🧹', '🔩', '⚠️'][i]}
