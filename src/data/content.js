@@ -53,7 +53,7 @@ export const siteContent = {
       tagline: 'Blue flame restored. Cooking efficiency back.',
       range: '₹199 – ₹499',
       time: '1–2 hrs',
-      image: null,
+      image: `${import.meta.env.BASE_URL}images/service-burner-cleaning.png`,
       badge: 'Best Value',
       badgeColor: 'bg-sapphire',
       features: ['Complete burner dismantling', 'Chemical degreasing & descaling', 'Jet & nozzle unclogging', 'Blue flame optimisation', 'Gas efficiency check'],
@@ -63,7 +63,7 @@ export const siteContent = {
       tagline: 'Safe, sealed, and professionally installed.',
       range: '₹599 – ₹1,999',
       time: '2–6 hrs',
-      image: null,
+      image: `${import.meta.env.BASE_URL}images/service-pipeline.png`,
       badge: null,
       badgeColor: null,
       features: ['ISI-certified pipes & fittings', 'Domestic & commercial setups', 'Pressure leak testing', 'Safety compliance checks', 'Post-install inspection'],
@@ -73,7 +73,7 @@ export const siteContent = {
       tagline: '24/7 emergency response — we arrive in 60 min.',
       range: '₹499 onwards',
       time: 'Within 60 Min',
-      image: null,
+      image: `${import.meta.env.BASE_URL}images/service-gas-leak.png`,
       badge: '24/7 Emergency',
       badgeColor: 'bg-primary',
       features: ['24/7 response, including holidays', 'Electronic leak detection', 'Immediate sealing & repair', 'Full safety checklist', 'Written clearance certificate'],
@@ -102,9 +102,9 @@ export const siteContent = {
 
   homeServices: [
     { title: 'Gas Stove Repair', desc: 'All Brands • 30 Day Warranty', image: `${import.meta.env.BASE_URL}images/service-stove-repair.png` },
-    { title: 'Deep Burner Cleaning', desc: 'Blue Flame • Carbon Removal', image: null },
-    { title: 'Pipeline Installation', desc: 'Safety Tested • New Fittings', image: null },
-    { title: 'Emergency Gas Leak', desc: '24/7 Response • 60 Min Arrival', image: null },
+    { title: 'Deep Burner Cleaning', desc: 'Blue Flame • Carbon Removal', image: `${import.meta.env.BASE_URL}images/service-burner-cleaning.png` },
+    { title: 'Pipeline Installation', desc: 'Safety Tested • New Fittings', image: `${import.meta.env.BASE_URL}images/service-pipeline.png` },
+    { title: 'Emergency Gas Leak', desc: '24/7 Response • 60 Min Arrival', image: `${import.meta.env.BASE_URL}images/service-gas-leak.png` },
   ],
 
   howItWorks: [
