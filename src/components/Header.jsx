@@ -9,9 +9,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between min-h-20 py-2">
           <Link to="/" className="flex items-center">
-            <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="Manoj Gas Fix" className="h-14 w-auto" />
+            <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="Manoj Gas Fix" className="h-20 w-auto" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">

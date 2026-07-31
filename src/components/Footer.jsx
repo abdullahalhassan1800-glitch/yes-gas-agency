@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="Manoj Gas Fix" className="h-10 w-auto" />
+              <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="Manoj Gas Fix" className="h-12 w-auto" />
               <div>
                 <div className="text-lg font-bold leading-tight">Manoj Gas</div>
                 <div className="text-[10px] font-medium text-primary uppercase tracking-widest leading-tight">Fix</div>
