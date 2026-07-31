@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import FloatingButtons from './components/FloatingButtons'
+import MobileBar from './components/MobileBar'
 import BookingModal from './components/BookingModal'
 import Home from './pages/Home'
 import Services from './pages/Services'
@@ -13,7 +14,7 @@ import NotFound from './pages/NotFound'
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col pb-16 md:pb-0">
       <Header />
       <main className="flex-1">
         <Routes>
@@ -28,6 +29,7 @@ export default function App() {
       </main>
       <Footer />
       <FloatingButtons />
+      <MobileBar />
       <BookingModal />
     </div>
   )

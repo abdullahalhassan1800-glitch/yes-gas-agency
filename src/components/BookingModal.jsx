@@ -23,7 +23,7 @@ export default function BookingModal() {
   }
 
   if (!open) return (
-    <button onClick={() => setOpen(true)} className="fixed bottom-6 left-6 z-[999] px-5 py-3 bg-gradient-to-r from-primary to-primary-dark text-white rounded-full text-sm font-semibold shadow-lg shadow-primary/30 hover:shadow-primary/40 transition-all hover:scale-105">
+    <button onClick={() => setOpen(true)} className="hidden md:flex fixed bottom-6 left-6 z-[999] items-center px-5 py-3 bg-gradient-to-r from-primary to-primary-dark text-white rounded-full text-sm font-semibold shadow-lg shadow-primary/30 hover:shadow-primary/40 transition-all hover:scale-105">
       Book Service
     </button>
   )
