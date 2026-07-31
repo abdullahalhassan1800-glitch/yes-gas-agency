@@ -1,7 +1,7 @@
 export const siteContent = {
   phone: '+91 1234567890',
   phoneRaw: '911234567890',
-  email: 'support@hassan.com',
+  email: 'support@manojgasfix.in',
   address: 'Delhi',
   addressFull: 'Delhi',
   workingHours: 'Mon – Sun, 8:00 AM – 9:00 PM',
@@ -29,24 +29,24 @@ export const siteContent = {
   ],
 
   whyChooseUs: [
-    { title: 'Safety First', desc: 'Every job includes a full safety inspection before we leave.' },
-    { title: '2–4 Hour Arrival', desc: 'We reach your doorstep within hours, not days.' },
-    { title: '10+ Years Experience', desc: 'Trusted by thousands since 2014.' },
-    { title: '5,000+ Happy Homes', desc: 'Our track record speaks for itself.' },
-    { title: 'ID-Verified Technicians', desc: 'Every technician is background-checked and certified.' },
-    { title: '30-Day Warranty', desc: 'Free service if the same issue returns within 30 days.' },
+    { title: 'Safety First, Always', desc: 'Every repair ends with a complete safety inspection and zero-leakage test.' },
+    { title: '2–4 Hour Doorstep Arrival', desc: 'Certified technicians reach you the same day — not tomorrow, not next week.' },
+    { title: '10+ Years Experience', desc: 'Thousands of repairs done right since 2014 across every corner of Delhi.' },
+    { title: '5,000+ Happy Homes', desc: 'Our ratings and repeat customers are the real proof of our work.' },
+    { title: 'ID-Verified Technicians', desc: 'Every technician is background-checked, trained, and certified.' },
+    { title: '30-Day Service Warranty', desc: 'If the same issue returns within 30 days, we fix it absolutely free.' },
   ],
 
   services: [
     {
       title: 'Gas Stove Repair',
-      tagline: 'All brands, all problems — fixed same day.',
+      tagline: 'All brands, all problems — fixed the same day.',
       range: '₹299 – ₹999',
       time: '2–4 hrs',
       image: '/images/service-stove-repair.png',
       badge: 'Most Popular',
       badgeColor: 'bg-primary',
-      features: ['Prestige, Pigeon, Glen, Sunflame & more', 'Burner replacement', 'Valve repair', 'Ignition fix', '30-day warranty'],
+      features: ['Prestige, Pigeon, Glen, Sunflame & more', 'Burner & nozzle replacement', 'Valve repair & knob fixing', 'Ignition & spark repair', '30-day workmanship warranty'],
     },
     {
       title: 'Deep Burner Cleaning',
@@ -56,7 +56,7 @@ export const siteContent = {
       image: '/images/service-burner-cleaning.png',
       badge: 'Best Value',
       badgeColor: 'bg-sapphire',
-      features: ['Complete dismantling', 'Chemical degreasing', 'Jet & nozzle unclogging', 'Blue flame optimization', 'Gas efficiency check'],
+      features: ['Complete burner dismantling', 'Chemical degreasing & descaling', 'Jet & nozzle unclogging', 'Blue flame optimisation', 'Gas efficiency check'],
     },
     {
       title: 'Pipeline Installation',
@@ -66,7 +66,7 @@ export const siteContent = {
       image: '/images/service-pipeline.png',
       badge: null,
       badgeColor: null,
-      features: ['ISI-certified pipes', 'Domestic & commercial', 'Pressure leak testing', 'Safety compliance', 'Post-install inspection'],
+      features: ['ISI-certified pipes & fittings', 'Domestic & commercial setups', 'Pressure leak testing', 'Safety compliance checks', 'Post-install inspection'],
     },
     {
       title: 'Emergency Gas Leak',
@@ -76,7 +76,7 @@ export const siteContent = {
       image: '/images/service-gas-leak.png',
       badge: '24/7 Emergency',
       badgeColor: 'bg-primary',
-      features: ['24/7 including holidays', 'Electronic leak detector', 'Immediate sealing', 'Full safety checklist', 'Written clearance certificate'],
+      features: ['24/7 response, including holidays', 'Electronic leak detection', 'Immediate sealing & repair', 'Full safety checklist', 'Written clearance certificate'],
     },
     {
       title: 'Auto Ignition Repair',
@@ -108,15 +108,15 @@ export const siteContent = {
   ],
 
   howItWorks: [
-    { step: '01', title: 'Call or WhatsApp Us', desc: 'Reach us in under 2 minutes. Tell us your issue and location.', extra: 'Available 8 AM – 8 PM, 7 days a week.' },
-    { step: '02', title: 'Technician at Your Door', desc: 'A certified, ID-verified technician reaches you in 2–4 hours.', extra: 'Get SMS with technician ETA.' },
-    { step: '03', title: 'Fixed, Safe & Guaranteed', desc: 'Problem resolved correctly the first time with safety testing.', extra: 'Free replacement within 30 days.' },
+    { step: '01', title: 'Call or WhatsApp Us', desc: 'Tell us your issue and location in under 2 minutes. It is that simple.', extra: 'Available 8 AM – 8 PM, 7 days a week.' },
+    { step: '02', title: 'Technician at Your Door', desc: 'A certified, ID-verified technician reaches you in 2–4 hours.', extra: 'Get SMS updates with the technician ETA.' },
+    { step: '03', title: 'Fixed, Safe & Guaranteed', desc: 'Problem resolved correctly the first time, with full safety testing.', extra: 'Free re-service within 30 days.' },
   ],
 
   testimonials: [
-    { name: 'Ravi Kumar', location: 'Delhi', text: 'The technician arrived within an hour and fixed my stove perfectly. Very professional service!', rating: 5 },
-    { name: 'Sneha Reddy', location: 'Delhi', text: 'Had a scary gas leak. They came immediately and sorted it out. Highly recommend!', rating: 5 },
-    { name: 'Abdul Rahman', location: 'Delhi', text: 'My stove auto-ignition was broken for weeks. They fixed it in 30 minutes. Great work!', rating: 5 },
+    { name: 'Ravi Kumar', location: 'Delhi', text: 'The technician arrived within an hour and fixed my stove perfectly. Very professional and clean work!', rating: 5 },
+    { name: 'Sneha Reddy', location: 'Delhi', text: 'Had a scary gas leak at home. They came immediately, checked everything, and sorted it out. Highly recommend!', rating: 5 },
+    { name: 'Abdul Rahman', location: 'Delhi', text: 'My auto-ignition was broken for weeks. They fixed it in 30 minutes at a fair price. Great work!', rating: 5 },
   ],
 
   serviceAreas: {
@@ -127,7 +127,7 @@ export const siteContent = {
   faqs: [
     {
       q: 'How fast can you reach my location in Delhi?',
-      a: 'We typically arrive within 2–4 hours of your call. For emergencies, we can be there in under 60 minutes.',
+      a: 'We typically arrive within 2–4 hours of your call. For gas leak emergencies, we can be at your doorstep in under 60 minutes.',
     },
     {
       q: 'Do you repair all brands of gas stoves?',
@@ -135,7 +135,7 @@ export const siteContent = {
     },
     {
       q: 'What if the problem returns after repair?',
-      a: 'All our repairs come with a 30-day warranty. If the same issue returns, we will fix it free of charge.',
+      a: 'All our repairs come with a 30-day warranty. If the same issue returns, we fix it free of charge — no questions asked.',
     },
     {
       q: 'Are there any visiting charges?',
@@ -143,7 +143,7 @@ export const siteContent = {
     },
     {
       q: 'Is it safe? How do you check for gas leaks?',
-      a: 'Safety is our priority. We use digital manometers and soap solution testing on every job to ensure zero leaks.',
+      a: 'Safety is our top priority. We use digital manometers and soap-solution testing on every single job to guarantee zero leaks.',
     },
   ],
 
@@ -153,14 +153,14 @@ export const siteContent = {
       price: '₹199',
       desc: 'Inspection fee waived on repair',
       popular: false,
-      features: ['Expert inspection', 'Issue diagnosis', 'Cost estimate', 'No obligation'],
+      features: ['Expert inspection', 'Issue diagnosis', 'Transparent cost estimate', 'No obligation'],
     },
     {
       name: 'Standard Service',
       price: '₹399',
       desc: 'Starting price, full deep clean + tune',
       popular: true,
-      features: ['Deep burner cleaning', 'Complete tune-up', 'Ignition check', '30-day warranty'],
+      features: ['Deep burner cleaning', 'Complete tune-up', 'Ignition & leak check', '30-day warranty'],
     },
     {
       name: 'Pipeline Install',
@@ -183,8 +183,8 @@ export const siteContent = {
   ],
 
   pricingFaqs: [
-    { q: 'Is inspection fee waived if repair is done?', a: 'Yes, the ₹199 inspection fee is fully waived if you proceed with the repair.' },
-    { q: 'Are spare parts included in the price?', a: 'Spare parts are billed separately at MRP with no markup.' },
-    { q: 'Is there a call-out fee for emergency?', a: 'No hidden fees. Emergency service starts at ₹499.' },
+    { q: 'Is the inspection fee waived if I get the repair done?', a: 'Yes, the ₹199 inspection fee is fully waived when you proceed with the repair.' },
+    { q: 'Are spare parts included in the price?', a: 'Spare parts are billed separately at MRP with no markup at all.' },
+    { q: 'Is there any call-out fee for emergencies?', a: 'No hidden fees. Emergency gas leak service starts at ₹499.' },
   ],
 }

@@ -74,18 +74,18 @@ export default function Services() {
               <form onSubmit={(e) => { e.preventDefault(); window.location.href = '/thank-you' }} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-                  <input required value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-primary outline-none" placeholder="Your name" />
+                  <input required value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none" placeholder="Your name" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-                  <input required value={form.phone} onChange={(e) => setForm({...form, phone: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-primary outline-none" placeholder="Your phone" />
+                  <input required value={form.phone} onChange={(e) => setForm({...form, phone: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none" placeholder="Your phone" />
                 </div>
                 <div className="sm:col-span-2">
                   <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                  <textarea rows={3} value={form.message} onChange={(e) => setForm({...form, message: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-primary outline-none resize-none" placeholder="Tell us about your issue..." />
+                  <textarea rows={3} value={form.message} onChange={(e) => setForm({...form, message: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none resize-none" placeholder="Tell us about your issue..." />
                 </div>
                 <div className="sm:col-span-2">
-                  <button type="submit" className="px-8 py-3 bg-gradient-to-r from-primary to-primary-dark text-white rounded-full text-sm font-semibold">
+                  <button type="submit" className="px-8 py-3 bg-gradient-to-r from-navy-800 to-deep-navy text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-navy-900/30 transition-shadow">
                     Book Service
                   </button>
                 </div>

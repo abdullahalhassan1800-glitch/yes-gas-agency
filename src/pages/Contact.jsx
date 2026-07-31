@@ -61,29 +61,29 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-                  <input required value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-primary outline-none" placeholder="Your name" />
+                  <input required value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none" placeholder="Your name" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
                   <div className="flex">
                     <span className="inline-flex items-center px-3 bg-gray-50 border border-r-0 border-gray-200 rounded-l-xl text-sm text-gray-500">+91</span>
-                    <input required value={form.phone} onChange={(e) => setForm({...form, phone: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-r-xl text-sm focus:ring-2 focus:ring-primary outline-none" placeholder="Enter phone" />
+                    <input required value={form.phone} onChange={(e) => setForm({...form, phone: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-r-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none" placeholder="Enter phone" />
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Area/Address</label>
-                  <input required value={form.area} onChange={(e) => setForm({...form, area: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-primary outline-none" placeholder="Your area in Delhi" />
+                  <input required value={form.area} onChange={(e) => setForm({...form, area: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none" placeholder="Your area in Delhi" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Service Required</label>
-                  <select required value={form.service} onChange={(e) => setForm({...form, service: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-primary outline-none bg-white">
+                  <select required value={form.service} onChange={(e) => setForm({...form, service: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none bg-white">
                     <option value="">Select service</option>
                     {siteContent.services.map((s) => <option key={s.title} value={s.title}>{s.title}</option>)}
                   </select>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Time</label>
-                  <select value={form.time} onChange={(e) => setForm({...form, time: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-primary outline-none bg-white">
+                  <select value={form.time} onChange={(e) => setForm({...form, time: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none bg-white">
                     <option value="">Any time</option>
                     <option>Morning (8 AM – 12 PM)</option>
                     <option>Afternoon (12 PM – 4 PM)</option>
@@ -92,10 +92,10 @@ export default function Contact() {
                 </div>
                 <div className="sm:col-span-2">
                   <label className="block text-sm font-medium text-gray-700 mb-1">Describe the Problem</label>
-                  <textarea rows={3} value={form.problem} onChange={(e) => setForm({...form, problem: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-primary outline-none resize-none" placeholder="Briefly describe your issue..." />
+                  <textarea rows={3} value={form.problem} onChange={(e) => setForm({...form, problem: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none resize-none" placeholder="Briefly describe your issue..." />
                 </div>
                 <div className="sm:col-span-2 flex flex-col sm:flex-row gap-3">
-                  <button type="submit" className="px-8 py-3 bg-gradient-to-r from-primary to-primary-dark text-white rounded-full text-sm font-semibold hover:shadow-lg transition-shadow">
+                  <button type="submit" className="px-8 py-3 bg-gradient-to-r from-navy-800 to-deep-navy text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-navy-900/30 transition-shadow">
                     Submit Enquiry
                   </button>
                   <a href={`tel:+${siteContent.phoneRaw}`} className="px-8 py-3 bg-gray-100 text-gray-800 rounded-full text-sm font-semibold text-center hover:bg-gray-200 transition-colors">

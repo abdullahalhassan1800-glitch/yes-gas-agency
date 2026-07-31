@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { siteContent } from '../data/content'
+import Typewriter from '../components/Typewriter'
 
 export default function Home() {
   const openBooking = () => {
@@ -18,11 +19,11 @@ export default function Home() {
             Technicians Available Now – {siteContent.serviceCity}
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-            Stop Struggling With Your Gas Stove –<br />
-            <span className="bg-gradient-to-r from-primary to-gold bg-clip-text text-transparent">We Fix It Today.</span>
+            Gas Stove Troubles?<br />
+            <Typewriter />
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-            Certified technicians at your door in 2–4 hours. All brands. All problems. 30-day warranty.
+            Certified technicians at your door in 2–4 hours. Every brand, every problem, backed by a 30-day warranty.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button onClick={openBooking} className="px-8 py-3.5 bg-gradient-to-r from-primary to-primary-dark text-white rounded-full text-base font-semibold shadow-lg shadow-primary/30 hover:shadow-primary/40 transition-all hover:scale-105">

@@ -10,7 +10,6 @@ import Pricing from './pages/Pricing'
 import Contact from './pages/Contact'
 import ThankYou from './pages/ThankYou'
 import NotFound from './pages/NotFound'
-import { siteContent } from './data/content'
 
 export default function App() {
   return (
