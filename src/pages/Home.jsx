@@ -69,14 +69,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 flex flex-col items-center justify-center gap-4 min-h-[300px]">
               <img
-                src={`${import.meta.env.BASE_URL}logo.jpeg`}
-                alt="Manoj Gas Fix"
-                className="w-full max-w-[300px] object-contain"
+                src={`${import.meta.env.BASE_URL}images/certified-technicians.png`}
+                alt="Certified & ID-Verified Technicians"
+                className="w-full max-w-[420px] object-contain rounded-2xl"
               />
-              <div className="flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-sm border border-primary-50">
-                <span className="text-lg">🛡️</span>
-                <span className="text-xs font-semibold text-navy-800">Certified & ID-Verified Technicians</span>
-              </div>
             </div>
             <div className="space-y-4">
               {[
