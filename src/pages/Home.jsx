@@ -247,10 +247,6 @@ export default function Home() {
       {/* CTA Banner */}
       <section className="py-16 bg-gradient-to-r from-primary via-sapphire to-emerald">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur text-white px-4 py-2 rounded-full text-sm mb-6">
-            <span className="w-2 h-2 bg-emerald rounded-full animate-ping" />
-            Technicians Available Now
-          </div>
           <h2 className="text-3xl font-bold text-white mb-8">Don't Wait For An Emergency. Get It Fixed Today.</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href={`https://wa.me/${siteContent.phoneRaw}`} target="_blank" rel="noopener noreferrer" className="px-8 py-3.5 bg-emerald text-white rounded-full text-base font-semibold hover:bg-emerald-dark transition-colors">
