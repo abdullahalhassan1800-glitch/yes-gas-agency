@@ -103,15 +103,26 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {siteContent.homeServices.map((s, i) => (
-              <div key={i} className="group bg-gradient-to-br from-sapphire to-sapphire rounded-2xl p-6 text-white hover:-translate-y-1 transition-all duration-300 shadow-lg">
-                <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center text-2xl mb-4">
-                  {['🔧', '🧹', '🔩', '⚠️'][i]}
+              <div key={i} className="group bg-gradient-to-br from-sapphire to-sapphire rounded-2xl overflow-hidden text-white hover:-translate-y-1 transition-all duration-300 shadow-lg">
+                <div className={s.image ? 'relative h-44 overflow-hidden' : 'p-6 pb-0'}>
+                  {s.image ? (
+                    <>
+                      <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-sapphire/60 to-transparent" />
+                    </>
+                  ) : (
+                    <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center text-2xl mb-4">
+                      {['🔧', '🧹', '🔩', '⚠️'][i]}
+                    </div>
+                  )}
                 </div>
-                <h3 className="text-lg font-bold mb-1">{s.title}</h3>
-                <p className="text-sm text-white/80 mb-4">{s.desc}</p>
-                <button onClick={openBooking} className="px-4 py-2 bg-white text-sapphire rounded-full text-xs font-semibold hover:bg-sapphire-light transition-colors">
-                  Book Now
-                </button>
+                <div className="p-6">
+                  <h3 className="text-lg font-bold mb-1">{s.title}</h3>
+                  <p className="text-sm text-white/80 mb-4">{s.desc}</p>
+                  <button onClick={openBooking} className="px-4 py-2 bg-white text-sapphire rounded-full text-xs font-semibold hover:bg-sapphire-light transition-colors">
+                    Book Now
+                  </button>
+                </div>
               </div>
             ))}
           </div>
