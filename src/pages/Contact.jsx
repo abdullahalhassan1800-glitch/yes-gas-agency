@@ -84,7 +84,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Area/Address</label>
-                  <input required value={form.area} onChange={(e) => setForm({...form, area: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none" placeholder="Your area in Delhi" />
+                  <input required value={form.area} onChange={(e) => setForm({...form, area: e.target.value})} className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:ring-sapphire focus:border-sapphire outline-none" placeholder="Your area in Thane" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Service Required</label>

@@ -15,7 +15,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Delhi's most trusted gas stove repair service. Certified technicians, same-day service, 30-day warranty.
+              Thane & Mumbai's most trusted gas stove repair service. Certified technicians, same-day service, 30-day warranty.
             </p>
           </div>
 

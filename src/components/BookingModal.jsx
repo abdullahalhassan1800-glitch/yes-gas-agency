@@ -77,7 +77,7 @@ export default function BookingModal() {
               </div>
               <div>
                 <label className="block text-xs font-semibold text-navy-800 mb-0.5">Your Area</label>
-                <input required value={form.area} onChange={(e) => setForm({...form, area: e.target.value})} className="w-full px-3 py-2 bg-sapphire-light/40 border border-navy-900/15 rounded-lg text-xs focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="e.g. Delhi" />
+                <input required value={form.area} onChange={(e) => setForm({...form, area: e.target.value})} className="w-full px-3 py-2 bg-sapphire-light/40 border border-navy-900/15 rounded-lg text-xs focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="e.g. Thane" />
               </div>
               <div>
                 <label className="block text-xs font-semibold text-navy-800 mb-0.5">Describe the Problem</label>

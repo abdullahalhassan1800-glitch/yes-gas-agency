@@ -1,11 +1,11 @@
 export const siteContent = {
-  phone: '+91 1234567890',
-  phoneRaw: '911234567890',
+  phone: '+91 86557 79429',
+  phoneRaw: '918655779429',
   email: 'support@manojgasfix.in',
-  address: 'Delhi',
-  addressFull: 'Delhi',
+  address: 'Thane, Mumbai',
+  addressFull: 'Thane, Mumbai',
   workingHours: 'Mon – Sun, 8:00 AM – 9:00 PM',
-  serviceCity: 'Delhi',
+  serviceCity: 'Thane',
 
   nav: [
     { label: 'Home', path: '/' },
@@ -17,7 +17,7 @@ export const siteContent = {
 
   stats: [
     { value: '2–4 hrs', label: 'Same Day Service', sub: 'Book before 5 PM' },
-    { value: '5,000+', label: 'Happy Customers', sub: `Across ${'Delhi'}` },
+    { value: '5,000+', label: 'Happy Customers', sub: `Across ${'Thane'}` },
     { value: '4.9★', label: 'Average Rating', sub: 'All platforms' },
   ],
 
@@ -31,7 +31,7 @@ export const siteContent = {
   whyChooseUs: [
     { title: 'Safety First, Always', desc: 'Every repair ends with a complete safety inspection and zero-leakage test.' },
     { title: '2–4 Hour Doorstep Arrival', desc: 'Certified technicians reach you the same day — not tomorrow, not next week.' },
-    { title: '10+ Years Experience', desc: 'Thousands of repairs done right since 2014 across every corner of Delhi.' },
+    { title: '10+ Years Experience', desc: 'Thousands of repairs done right since 2014 across every corner of Thane & Mumbai.' },
     { title: '5,000+ Happy Homes', desc: 'Our ratings and repeat customers are the real proof of our work.' },
     { title: 'ID-Verified Technicians', desc: 'Every technician is background-checked, trained, and certified.' },
     { title: '30-Day Service Warranty', desc: 'If the same issue returns within 30 days, we fix it absolutely free.' },
@@ -114,22 +114,22 @@ export const siteContent = {
   ],
 
   testimonials: [
-    { name: 'Priya Sharma', location: 'Rohini, Delhi', text: 'My gas stove was leaking gas near the knob. They reached within 45 minutes and fixed it with a new valve. Fully tested before leaving. Highly recommended!', rating: 5 },
-    { name: 'Vikram Singh', location: 'Dwarka, Delhi', text: 'Deep burner cleaning done beautifully. My stove flame is perfectly blue now and cooking is faster. Very reasonable price too.', rating: 5 },
-    { name: 'Fatima Khan', location: 'Janakpuri, Delhi', text: 'Booked online, technician arrived same day. The auto-ignition was repaired in 20 minutes with a 30-day warranty. Great service!', rating: 5 },
-    { name: 'Rohit Malhotra', location: 'Laxmi Nagar, Delhi', text: 'Pipeline installation was quick, clean, and professional. They checked for leaks with proper equipment and even explained everything. Very happy!', rating: 5 },
-    { name: 'Anjali Verma', location: 'Karol Bagh, Delhi', text: 'Had an emergency gas leak at night. They came within the hour, found the issue, and fixed it on the spot. Peace of mind restored.', rating: 5 },
-    { name: 'Amit Desai', location: 'Saket, Delhi', text: 'Honest pricing, no hidden charges. Regulator replaced at MRP with no markup. The technician was polite and punctual. Great experience overall.', rating: 5 },
+    { name: 'Priya Sharma', location: 'Thane West', text: 'My gas stove was leaking gas near the knob. They reached within 45 minutes and fixed it with a new valve. Fully tested before leaving. Highly recommended!', rating: 5 },
+    { name: 'Vikram Singh', location: 'Mulund, Mumbai', text: 'Deep burner cleaning done beautifully. My stove flame is perfectly blue now and cooking is faster. Very reasonable price too.', rating: 5 },
+    { name: 'Fatima Khan', location: 'Vashi, Navi Mumbai', text: 'Booked online, technician arrived same day. The auto-ignition was repaired in 20 minutes with a 30-day warranty. Great service!', rating: 5 },
+    { name: 'Rohit Malhotra', location: 'Dombivli', text: 'Pipeline installation was quick, clean, and professional. They checked for leaks with proper equipment and even explained everything. Very happy!', rating: 5 },
+    { name: 'Anjali Verma', location: 'Ghodbunder Road, Thane', text: 'Had an emergency gas leak at night. They came within the hour, found the issue, and fixed it on the spot. Peace of mind restored.', rating: 5 },
+    { name: 'Amit Desai', location: 'Kalyan, Mumbai', text: 'Honest pricing, no hidden charges. Regulator replaced at MRP with no markup. The technician was polite and punctual. Great experience overall.', rating: 5 },
   ],
 
   serviceAreas: {
-    highDemand: ['Delhi NCR', 'South Delhi', 'East Delhi', 'West Delhi', 'North Delhi', 'Central Delhi', 'Dwarka', 'Rohini'],
-    alsoCovered: ['Ghaziabad', 'Noida', 'Gurugram', 'Faridabad', 'Laxmi Nagar', 'Karol Bagh', 'Connaught Place', 'Hauz Khas', 'Saket', 'Lajpat Nagar', 'Pitampura', 'Janakpuri', 'Paschim Vihar', 'Patel Nagar', 'Moti Nagar', 'Rajouri Garden', 'Shahdara', 'Kashmiri Gate', 'Sarojini Nagar', 'Green Park', 'Greater Kailash', 'Vasant Kunj'],
+    highDemand: ['Thane', 'Thane West', 'Thane East', 'Mulund', 'Vashi', 'Dombivli', 'Kalyan', 'Bhiwandi'],
+    alsoCovered: ['Mumbai', 'Navi Mumbai', 'Powai', 'Ghatkopar', 'Borivali', 'Andheri', 'Dadar', 'Bandra', 'Mira Road', 'Bhayandar', 'Kopar Khairane', 'Nerul', 'Kharghar', 'Airoli', 'Belapur', 'Ulhasnagar', 'Ambernath', 'Badlapur', 'Boisar', 'Vasai', 'Virar', 'Panvel', 'Kamothe', 'Taloja'],
   },
 
   faqs: [
     {
-      q: 'How fast can you reach my location in Delhi?',
+      q: 'How fast can you reach my location in Thane?',
       a: 'We typically arrive within 2–4 hours of your call. For gas leak emergencies, we can be at your doorstep in under 60 minutes.',
     },
     {
