@@ -15,7 +15,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <div className="flex flex-col items-center gap-3 mb-6">
-            <div className="inline-flex items-center gap-2 bg-primary/95 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg shadow-primary/30">
+            <div className="inline-flex items-center gap-2 bg-primary/95 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg shadow-primary/30 animate-flash">
               <span className="animate-pulse">🔥</span>
               25% OFF on All Services
             </div>
