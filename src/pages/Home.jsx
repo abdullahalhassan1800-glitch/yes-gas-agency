@@ -67,11 +67,12 @@ export default function Home() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="bg-gradient-to-br from-primary-50 to-primary-50 rounded-2xl p-8 flex items-center justify-center min-h-[300px]">
-              <div className="text-center">
-                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-3xl">🔧</div>
-                <div className="mt-4 px-4 py-2 bg-white rounded-full shadow text-sm font-medium text-primary inline-block">Safety Certified</div>
-              </div>
+            <div className="bg-gradient-to-br from-primary-50 to-primary-50 rounded-2xl p-8 flex items-center justify-center min-h-[300px] overflow-hidden">
+              <img
+                src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YyvD338wWOcMBMEa/logo-YNqMBZqDgkFMPLD6.png"
+                alt="Safety Certified"
+                className="w-full h-full object-cover rounded-2xl"
+              />
             </div>
             <div className="space-y-4">
               {[
