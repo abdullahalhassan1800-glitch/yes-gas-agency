@@ -49,8 +49,12 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {siteContent.services.map((service, i) => (
               <div key={i} className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
-                <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
-                  <div className="text-5xl opacity-30">{['🔧', '🧹', '🔩', '⚠️', '⚡', '🔧'][i]}</div>
+                <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative overflow-hidden">
+                  {service.image ? (
+                    <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+                  ) : (
+                    <div className="text-5xl opacity-30">{['🔧', '🧹', '🔩', '⚠️', '⚡', '🔧'][i]}</div>
+                  )}
                   {service.badge && (
                     <span className={`absolute top-3 right-3 ${service.badgeColor} text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider`}>
                       {service.badge}
