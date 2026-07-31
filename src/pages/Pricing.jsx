@@ -18,6 +18,15 @@ export default function Pricing() {
         </div>
       </section>
 
+      {/* Offer Banner */}
+      <div className="bg-gradient-to-r from-primary/10 to-gold/10 border-b border-primary/20">
+        <div className="max-w-7xl mx-auto px-4 py-3 text-center text-sm font-semibold text-primary">
+          🔥 Limited Time Offer: <span className="font-bold">25% OFF on All Services</span>
+          <span className="text-primary/80 font-normal"> • Visiting Charge ₹99 Only</span>
+          <button onClick={openBooking} className="ml-2 underline underline-offset-2 hover:text-primary-dark transition-colors">Book Now →</button>
+        </div>
+      </div>
+
       {/* Plans */}
       <section className="py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

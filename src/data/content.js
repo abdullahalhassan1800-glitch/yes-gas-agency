@@ -142,7 +142,7 @@ export const siteContent = {
     },
     {
       q: 'Are there any visiting charges?',
-      a: 'We charge a ₹199 inspection fee, which is fully waived if you proceed with the repair.',
+      a: 'We charge a ₹99 visiting fee only, which is fully waived if you proceed with the repair.',
     },
     {
       q: 'Is it safe? How do you check for gas leaks?',
@@ -153,8 +153,8 @@ export const siteContent = {
   pricingPlans: [
     {
       name: 'Basic Inspection',
-      price: '₹199',
-      desc: 'Inspection fee waived on repair',
+      price: '₹99',
+      desc: 'Visiting charge, waived on repair',
       popular: false,
       features: ['Expert inspection', 'Issue diagnosis', 'Transparent cost estimate', 'No obligation'],
     },
@@ -186,7 +186,7 @@ export const siteContent = {
   ],
 
   pricingFaqs: [
-    { q: 'Is the inspection fee waived if I get the repair done?', a: 'Yes, the ₹199 inspection fee is fully waived when you proceed with the repair.' },
+    { q: 'Is the visiting charge waived if I get the repair done?', a: 'Yes, the ₹99 visiting charge is fully waived when you proceed with the repair.' },
     { q: 'Are spare parts included in the price?', a: 'Spare parts are billed separately at MRP with no markup at all.' },
     { q: 'Is there any call-out fee for emergencies?', a: 'No hidden fees. Emergency gas leak service starts at ₹499.' },
   ],

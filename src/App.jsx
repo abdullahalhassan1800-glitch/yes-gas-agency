@@ -13,8 +13,24 @@ import ThankYou from './pages/ThankYou'
 import NotFound from './pages/NotFound'
 
 export default function App() {
+  const openBooking = () => {
+    const btn = document.querySelector('[class*="fixed"][class*="left-6"]')
+    if (btn) btn.click()
+  }
+
   return (
     <div className="min-h-screen flex flex-col pb-16 md:pb-0">
+      <div className="bg-gradient-to-r from-primary to-primary-dark text-white">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-center gap-2 text-xs sm:text-sm font-semibold">
+          <span className="animate-pulse">🔥</span>
+          <span>25% OFF on All Services</span>
+          <span className="hidden sm:inline text-white/80 font-normal">•</span>
+          <span className="text-white/95">Visiting Charge ₹99 Only</span>
+          <button onClick={openBooking} className="ml-2 px-3 py-1 bg-white text-primary rounded-full text-xs font-bold hover:bg-gray-100 transition-colors">
+            Claim Offer
+          </button>
+        </div>
+      </div>
       <Header />
       <main className="flex-1">
         <Routes>
