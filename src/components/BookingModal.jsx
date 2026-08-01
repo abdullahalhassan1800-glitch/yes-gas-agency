@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { siteContent } from '../data/content'
 import { submitToSheet } from '../utils/submitToSheet'
 
 export default function BookingModal() {
+  const navigate = useNavigate()
   const [open, setOpen] = useState(false)
-  const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [form, setForm] = useState({ name: '', phone: '', service: '', area: '', problem: '' })
 
@@ -18,8 +19,7 @@ export default function BookingModal() {
     setSubmitting(true)
     await submitToSheet({ ...form, source: 'Popup Form' })
     setSubmitting(false)
-    setSubmitted(true)
-    setTimeout(() => { setOpen(false); setSubmitted(false); setForm({ name: '', phone: '', service: '', area: '', problem: '' }) }, 3000)
+    navigate('/thank-you', { state: { ...form, source: 'Popup Form' } })
   }
 
   if (!open) return (
@@ -44,15 +44,6 @@ export default function BookingModal() {
         </div>
 
         <div className="px-4 py-3">
-          {submitted ? (
-            <div className="text-center py-8">
-              <div className="w-14 h-14 bg-emerald-light rounded-full flex items-center justify-center mx-auto mb-3">
-                <svg className="w-7 h-7 text-emerald-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
-              </div>
-              <h3 className="text-base font-semibold text-gray-900">Booking Confirmed!</h3>
-              <p className="text-xs text-gray-500 mt-1">Our technician will call you within 15 minutes</p>
-            </div>
-          ) : (
             <form onSubmit={handleSubmit} className="space-y-2.5">
               <div className="grid grid-cols-1 gap-2.5">
                 <div>
@@ -93,7 +84,6 @@ export default function BookingModal() {
                 </a>
               </div>
             </form>
-          )}
         </div>
       </div>
     </div>

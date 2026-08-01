@@ -20,7 +20,7 @@ export default function Contact() {
       source: 'Contact Page',
     })
     setSubmitting(false)
-    navigate('/thank-you')
+    navigate('/thank-you', { state: { ...form, source: 'Contact Page' } })
   }
 
   return (
