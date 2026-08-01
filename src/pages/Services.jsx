@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { siteContent } from '../data/content'
 import { submitToSheet } from '../utils/submitToSheet'
 
 export default function Services() {
+  const navigate = useNavigate()
   const openBooking = () => {
     const btn = document.querySelector('[class*="fixed"][class*="left-6"]')
     if (btn) btn.click()
@@ -22,7 +24,7 @@ export default function Services() {
       source: 'Services Page',
     })
     setSubmitting(false)
-    window.location.href = '/thank-you'
+    navigate('/thank-you', { state: { name: form.name, phone: form.phone, service: '', area: '', problem: form.message, source: 'Services Page' } })
   }
 
   return (
