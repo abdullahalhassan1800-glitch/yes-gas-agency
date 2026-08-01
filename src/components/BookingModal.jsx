@@ -19,6 +19,8 @@ export default function BookingModal() {
     setSubmitting(true)
     await submitToSheet({ ...form, source: 'Popup Form' })
     setSubmitting(false)
+    setOpen(false)
+    setForm({ name: '', phone: '', service: '', area: '', problem: '' })
     navigate('/thank-you', { state: { ...form, source: 'Popup Form' } })
   }
 
